@@ -12,7 +12,4 @@ Click a thumbnail to view the detailed documentation for that dashboard.
   <a href="new-year-resolutions.md">
     <img src="https://raw.githubusercontent.com/SamaFitz/samafitz/main/images/New%20Year%20Resolutions.jpeg" width="250">
   </a>
-  <a href="olympics-dashboard.md">
-    <img src="https://raw.githubusercontent.com/SamaFitz/samafitz/main/images/Olympics%20Dashboard.jpeg" width="250">
-  </a>
 </p>
