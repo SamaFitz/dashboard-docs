@@ -1,6 +1,6 @@
 # Superstore Executive Overview  
 
-[![View Dashboard](https://raw.githubusercontent.com/SamaFitz/samafitz/main/images/Superstore%20Executive%20Overview.jpeg)](https://public.tableau.com/app/profile/samantha.fitzsimmons/viz/SuperstoreDashboardRedesign/ExecutiveOverview)
+[<img src="https://raw.githubusercontent.com/SamaFitz/samafitz/main/images/Superstore%20Executive%20Overview.jpeg" width="150">](https://public.tableau.com/app/profile/samantha.fitzsimmons/viz/SuperstoreDashboardRedesign/ExecutiveOverview)
 
 ### 📊 Purpose  
 Executive-level view of sales performance across states, categories, sub-categories, and products.  
