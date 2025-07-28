@@ -2,10 +2,13 @@
 
 [<img src="https://raw.githubusercontent.com/SamaFitz/samafitz/main/images/Superstore%20Executive%20Overview.jpeg" width="150">](https://public.tableau.com/app/profile/samantha.fitzsimmons/viz/SuperstoreDashboardRedesign/ExecutiveOverview)
 
+
 ### 📊 Purpose  
 Executive-level view of sales performance across states, categories, sub-categories, and products.  
 
+
 ---
+
 
 ### 🔄 Interaction Flow  
 
@@ -13,7 +16,9 @@ Executive-level view of sales performance across states, categories, sub-categor
 2. **Click a Category** → reveals **Sub-Categories** in the same chart  
 3. **Click a Sub-Category** → filters the **Metric by Product** bar chart  
 
+
 ---
+
 
 ```mermaid
 graph TD
@@ -35,6 +40,7 @@ graph TD
     SubCatHighlight --> SubCatIfStatement[Sub-Cat If Statement Calc]
     SubCatHighlight --> IsSubCatEmpty[Is Sub-Cat Highlight Set Empty Calc]
 ```
+
 
 
 
@@ -78,6 +84,8 @@ IF [1.6 Current Level] = 'Sub-Category' THEN ""
 ELSEIF [1.1 Category Set] THEN [Sub-Category]
 ELSE ""
 END
+
+
 
 
 ### 📊 Metric by Product Drilldown  
