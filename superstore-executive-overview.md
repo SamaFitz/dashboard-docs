@@ -15,23 +15,21 @@ Executive-level view of sales performance across states, categories, sub-categor
 
 ---
 
-### 🗂 Dependency Diagram  
-
 ```mermaid
 graph TD
-    StateChart[Metric by State] --> CategoryChart[Metric by Category → Sub-Category]
+    StateChart[Metric by State] --> CategoryChart[Metric by Category and Sub-Category]
     CategoryChart --> ProductChart[Metric by Product]
 
-    CategorySet[1.1 Category Set] --> CategoryHeader[1.2 Category Header]
-    CategorySet --> SubCategoryLevel[1.3 Sub-Category Level]
-    SubCategoryLevel --> SegmentLevel[1.5 Segment Level]
-    SegmentLevel --> CurrentLevel[1.6 Current Level]
-    CurrentLevel --> SubCategoryHeader[1.7 Sub-Category Header]
+    CategorySet[Category Set] --> CategoryHeader[Category Header]
+    CategorySet --> SubCategoryLevel[Sub-Category Level]
+    SubCategoryLevel --> SegmentLevel[Segment Level]
+    SegmentLevel --> CurrentLevel[Current Level]
+    CurrentLevel --> SubCategoryHeader[Sub-Category Header]
 
-    CategoryChart --> SubCatHighlight[Calc: Sub-Category Highlight]
-    SubCatHighlight --> SubCatIfStatement[Calc: Sub-Cat If Statement]
-    SubCatHighlight --> IsSubCatEmpty[Calc: Is the Sub-Cat Highlight Set Empty?]
-
+    CategoryChart --> SubCatHighlight[Sub-Category Highlight]
+    SubCatHighlight --> SubCatIfStatement[Sub-Cat If Statement]
+    SubCatHighlight --> IsSubCatEmpty[Is Sub-Cat Highlight Set Empty]
+```
 
 
 ### 📊 Metric by Category → Sub-Category Drilldown  
