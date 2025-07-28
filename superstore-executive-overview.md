@@ -110,19 +110,6 @@ MAX(
 } = 0
 
 
-### 🌴 Dependency Tree  
-
-1.1 Category Set  
- ├─> 1.2 Category Header  
- ├─> 1.3 Sub-Category Level  
- │    ├─> 1.5 Segment Level  
- │    │    ├─> 1.6 Current Level  
- │    │    │    └─> 1.7 Sub-Category Header  
- │    └─> 1.4 Sub-Category Level Set  
- └─> Sub-Category Highlight  
-      ├─> Sub-Cat If Statement  
-      └─> Is the Sub-Cat Highlight Set Empty?
-
 
 
 
