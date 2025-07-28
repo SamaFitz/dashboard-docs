@@ -17,20 +17,23 @@ Executive-level view of sales performance across states, categories, sub-categor
 
 ```mermaid
 graph TD
-    StateChart[Metric by State] --> CategoryChart[Metric by Category and Sub-Category]
+    StateChart[Metric by State] --> CategoryChart[Metric by Category → Sub-Category]
     StateChart --> ProductChart[Metric by Product]
 
     CategoryChart --> ProductChart
 
-    CategorySet[Category Set] --> CategoryHeader[Category Header]
-    CategorySet --> SubCategoryLevel[Sub-Category Level]
-    SubCategoryLevel --> SegmentLevel[Segment Level]
-    SegmentLevel --> CurrentLevel[Current Level]
-    CurrentLevel --> SubCategoryHeader[Sub-Category Header]
+    %% Drilldown logic INSIDE the Metric by Category chart
+    CategoryChart --> CategorySet[Category Set Logic]
+    CategorySet --> CategoryHeader[Category Header Calc]
+    CategorySet --> SubCategoryLevel[Sub-Category Level Calc]
+    SubCategoryLevel --> SegmentLevel[Segment Level Calc]
+    SegmentLevel --> CurrentLevel[Current Level Calc]
+    CurrentLevel --> SubCategoryHeader[Sub-Category Header Calc]
 
-    CategoryChart --> SubCatHighlight[Sub-Category Highlight]
-    SubCatHighlight --> SubCatIfStatement[Sub-Cat If Statement]
-    SubCatHighlight --> IsSubCatEmpty[Is Sub-Cat Highlight Set Empty]
+    %% Highlight logic feeding into product chart
+    CategoryChart --> SubCatHighlight[Sub-Category Highlight Logic]
+    SubCatHighlight --> SubCatIfStatement[Sub-Cat If Statement Calc]
+    SubCatHighlight --> IsSubCatEmpty[Is Sub-Cat Highlight Set Empty Calc]
 ```
 
 
