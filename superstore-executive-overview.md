@@ -18,7 +18,9 @@ Executive-level view of sales performance across states, categories, sub-categor
 ```mermaid
 graph TD
     StateChart[Metric by State] --> CategoryChart[Metric by Category and Sub-Category]
-    CategoryChart --> ProductChart[Metric by Product]
+    StateChart --> ProductChart[Metric by Product]
+
+    CategoryChart --> ProductChart
 
     CategorySet[Category Set] --> CategoryHeader[Category Header]
     CategorySet --> SubCategoryLevel[Sub-Category Level]
@@ -30,6 +32,7 @@ graph TD
     SubCatHighlight --> SubCatIfStatement[Sub-Cat If Statement]
     SubCatHighlight --> IsSubCatEmpty[Is Sub-Cat Highlight Set Empty]
 ```
+
 
 
 ### 📊 Metric by Category → Sub-Category Drilldown  
